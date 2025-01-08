@@ -70,6 +70,7 @@ class MyHomePage extends StatelessWidget {
             MaterialPageRoute(
               builder: (context) => _SharedScaffold(
                 title: title,
+                color: color,
                 child: widget,
               ),
             ),
@@ -102,19 +103,26 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
+/// Used to share code between pages.
 class _SharedScaffold extends StatelessWidget {
   final String title;
 
   final Widget child;
 
-  const _SharedScaffold({required this.title, required this.child});
+  final Color color;
+
+  const _SharedScaffold({
+    required this.title,
+    required this.child,
+    required this.color,
+  });
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: color,
+        foregroundColor: Colors.white,
         title: Text(title),
       ),
       body: child,
