@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_maps_samples/pages/basic.dart';
 import 'package:flutter_maps_samples/pages/basic_static.dart';
 import 'package:flutter_maps_samples/pages/experiment.dart';
+import 'package:flutter_maps_samples/pages/map_id.dart';
 import 'package:flutter_maps_samples/pages/marker.dart';
 
 void main() {
@@ -29,7 +30,7 @@ class MyHomePage extends StatelessWidget {
     BasicStaticSample(),
     BasicSample(),
     MarkerSample(),
-    ExperimentSample(),
+    MapIdSample(),
     ExperimentSample(),
     ExperimentSample(),
   ];
