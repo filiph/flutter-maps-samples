@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+/// Shows how to change map type (normal, satellite, terrain or hybrid).
 class MapTypeSample extends StatelessWidget {
   const MapTypeSample({super.key});
 

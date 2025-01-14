@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_maps_samples/pages/basic.dart';
 import 'package:flutter_maps_samples/pages/basic_static.dart';
 import 'package:flutter_maps_samples/pages/experiment.dart';
+import 'package:flutter_maps_samples/pages/handle_events.dart';
 import 'package:flutter_maps_samples/pages/map_controller_async.dart';
 import 'package:flutter_maps_samples/pages/map_id.dart';
 import 'package:flutter_maps_samples/pages/map_type.dart';
@@ -37,6 +38,7 @@ class MyHomePage extends StatelessWidget {
     MarkersDynamicSample(),
     MapTypeSample(),
     MapControllerAsyncSample(),
+    HandleEventsSample(),
     ExperimentSample(),
   ];
 
