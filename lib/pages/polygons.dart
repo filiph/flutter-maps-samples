@@ -11,6 +11,7 @@ class PolygonsSample extends StatelessWidget {
       initialCameraPosition: CameraPosition(target: LatLng(25, -72)),
       polygons: {
         Polygon(
+          // Polygon id must be unique.
           polygonId: PolygonId('bermuda'),
           points: [
             LatLng(25.28, -80.33),
