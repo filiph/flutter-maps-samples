@@ -9,6 +9,7 @@ import 'package:flutter_maps_samples/pages/map_type.dart';
 import 'package:flutter_maps_samples/pages/marker.dart';
 import 'package:flutter_maps_samples/pages/marker_custom_icon.dart';
 import 'package:flutter_maps_samples/pages/markers_dynamic.dart';
+import 'package:flutter_maps_samples/pages/my_location.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,6 +42,7 @@ class MyHomePage extends StatelessWidget {
     MapTypeSample(),
     MapControllerAsyncSample(),
     HandleEventsSample(),
+    MyLocationSample(),
     ExperimentSample(),
   ];
 

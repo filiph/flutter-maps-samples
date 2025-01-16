@@ -1,4 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The ACCESS_COARSE_LOCATION or the ACCESS_FINE_LOCATION is needed
+         for the My Location layer to work. Apart from this, you also have to
+         ask the user for permission at runtime. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application
         android:label="flutter_maps_samples"
         android:name="${applicationName}"
@@ -45,4 +49,5 @@
             <data android:mimeType="text/plain"/>
         </intent>
     </queries>
+
 </manifest>
