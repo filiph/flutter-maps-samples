@@ -28,12 +28,12 @@ class _MarkerClusteringDynamicSampleState
       initialCameraPosition: CameraPosition(target: LatLng(0, 0)),
       clusterManagers: _clusters,
       markers: _markers,
-      // We create clusters whenever the map's view has finished moving.
+      // We recompute clusters whenever the map's view has finished moving.
       onCameraIdle: _recomputeClusters,
     );
   }
 
-  /// We create clusters according to some business logic, and call [setState].
+  /// Creates clusters according to some business logic, then calls [setState].
   void _recomputeClusters() {
     final myCluster = ClusterManager(
       clusterManagerId: ClusterManagerId('my cluster'),
@@ -43,8 +43,8 @@ class _MarkerClusteringDynamicSampleState
     // Here, we simply assign markers whose id starts with 'in'
     // to a the cluster above, and keep the rest as individual markers.
     //
-    // In a real app, you can choose to cluster according to some geographic
-    // or functional relationship between markers, and the current zoom level.
+    // In a real app, you can choose to cluster according to some meaningful
+    // relationship between markers.
     final updatedMarkers = _markers
         .map((marker) => marker.copyWith(
               clusterManagerIdParam: marker.markerId.value.startsWith('in')
