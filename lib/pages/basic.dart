@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_maps_samples/locations.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 /// Shows how to obtain and use [GoogleMapController].
@@ -43,7 +42,7 @@ class _BasicSampleState extends State<BasicSample> {
   }
 
   void _onPressed() {
-    final newYork = CameraPosition(target: newYorkLocation, zoom: 12);
+    final newYork = CameraPosition(target: LatLng(40.7128, -74.0060), zoom: 12);
     final update = CameraUpdate.newCameraPosition(newYork);
     _controller?.moveCamera(update);
   }

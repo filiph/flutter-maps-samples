@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_maps_samples/pages/basic.dart';
 import 'package:flutter_maps_samples/pages/basic_static.dart';
-import 'package:flutter_maps_samples/pages/experiment.dart';
 import 'package:flutter_maps_samples/pages/handle_events.dart';
 import 'package:flutter_maps_samples/pages/map_controller_async.dart';
 import 'package:flutter_maps_samples/pages/map_id.dart';
@@ -51,7 +50,6 @@ class MyHomePage extends StatelessWidget {
     PolylinesSample(),
     MarkerClusteringSample(),
     MarkerClusteringDynamicSample(),
-    ExperimentSample(),
   ];
 
   const MyHomePage({super.key});
