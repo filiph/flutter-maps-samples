@@ -8,7 +8,7 @@ class PolylinesSample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GoogleMap(
-      initialCameraPosition: CameraPosition(target: LatLng(0, 0)),
+      initialCameraPosition: CameraPosition(target: LatLng(49, -23)),
       polylines: {
         Polyline(
           // Polyline id must be unique.
