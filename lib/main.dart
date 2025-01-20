@@ -7,6 +7,8 @@ import 'package:flutter_maps_samples/pages/map_controller_async.dart';
 import 'package:flutter_maps_samples/pages/map_id.dart';
 import 'package:flutter_maps_samples/pages/map_type.dart';
 import 'package:flutter_maps_samples/pages/marker.dart';
+import 'package:flutter_maps_samples/pages/marker_clustering.dart';
+import 'package:flutter_maps_samples/pages/marker_clustering_dynamic.dart';
 import 'package:flutter_maps_samples/pages/marker_custom_icon.dart';
 import 'package:flutter_maps_samples/pages/markers_dynamic.dart';
 import 'package:flutter_maps_samples/pages/my_location.dart';
@@ -47,6 +49,8 @@ class MyHomePage extends StatelessWidget {
     MyLocationSample(),
     PolygonsSample(),
     PolylinesSample(),
+    MarkerClusteringSample(),
+    MarkerClusteringDynamicSample(),
     ExperimentSample(),
   ];
 
