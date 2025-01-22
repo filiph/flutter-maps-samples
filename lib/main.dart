@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_maps_samples/pages/basic.dart';
-import 'package:flutter_maps_samples/pages/camera_animate.dart';
-import 'package:flutter_maps_samples/pages/camera_move.dart';
-import 'package:flutter_maps_samples/pages/handle_events.dart';
-import 'package:flutter_maps_samples/pages/map_controller_async.dart';
-import 'package:flutter_maps_samples/pages/map_id.dart';
-import 'package:flutter_maps_samples/pages/map_type.dart';
-import 'package:flutter_maps_samples/pages/marker.dart';
-import 'package:flutter_maps_samples/pages/marker_clusters.dart';
-import 'package:flutter_maps_samples/pages/marker_clusters_dynamic.dart';
-import 'package:flutter_maps_samples/pages/marker_custom.dart';
-import 'package:flutter_maps_samples/pages/marker_dynamic.dart';
-import 'package:flutter_maps_samples/pages/my_location.dart';
-import 'package:flutter_maps_samples/pages/polygons.dart';
-import 'package:flutter_maps_samples/pages/polylines.dart';
-import 'package:flutter_maps_samples/pages/styled_map.dart';
+import 'package:flutter_maps_samples/samples/basic.dart';
+import 'package:flutter_maps_samples/samples/camera_animate.dart';
+import 'package:flutter_maps_samples/samples/camera_move.dart';
+import 'package:flutter_maps_samples/samples/handle_events.dart';
+import 'package:flutter_maps_samples/samples/map_controller_async.dart';
+import 'package:flutter_maps_samples/samples/map_id.dart';
+import 'package:flutter_maps_samples/samples/map_type.dart';
+import 'package:flutter_maps_samples/samples/marker.dart';
+import 'package:flutter_maps_samples/samples/marker_clusters.dart';
+import 'package:flutter_maps_samples/samples/marker_clusters_dynamic.dart';
+import 'package:flutter_maps_samples/samples/marker_custom.dart';
+import 'package:flutter_maps_samples/samples/marker_dynamic.dart';
+import 'package:flutter_maps_samples/samples/my_location.dart';
+import 'package:flutter_maps_samples/samples/polygons.dart';
+import 'package:flutter_maps_samples/samples/polylines.dart';
+import 'package:flutter_maps_samples/samples/styled_map.dart';
 
 void main() {
   runApp(const MyApp());
