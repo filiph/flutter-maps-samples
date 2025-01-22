@@ -13,6 +13,7 @@ import 'package:flutter_maps_samples/pages/markers_dynamic.dart';
 import 'package:flutter_maps_samples/pages/my_location.dart';
 import 'package:flutter_maps_samples/pages/polygons.dart';
 import 'package:flutter_maps_samples/pages/polylines.dart';
+import 'package:flutter_maps_samples/pages/styled_map.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,6 +43,7 @@ class MyHomePage extends StatelessWidget {
     MarkerCustomIconSample(),
     MarkersDynamicSample(),
     MapIdSample(),
+    StyledMapSample(),
     MapTypeSample(),
     MapControllerAsyncSample(),
     HandleEventsSample(),
