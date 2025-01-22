@@ -7,9 +7,9 @@ import 'package:flutter_maps_samples/pages/map_controller_async.dart';
 import 'package:flutter_maps_samples/pages/map_id.dart';
 import 'package:flutter_maps_samples/pages/map_type.dart';
 import 'package:flutter_maps_samples/pages/marker.dart';
-import 'package:flutter_maps_samples/pages/marker_clustering.dart';
-import 'package:flutter_maps_samples/pages/marker_clustering_dynamic.dart';
-import 'package:flutter_maps_samples/pages/marker_custom_icon.dart';
+import 'package:flutter_maps_samples/pages/marker_clusters.dart';
+import 'package:flutter_maps_samples/pages/marker_clusters_dynamic.dart';
+import 'package:flutter_maps_samples/pages/marker_custom.dart';
 import 'package:flutter_maps_samples/pages/markers_dynamic.dart';
 import 'package:flutter_maps_samples/pages/my_location.dart';
 import 'package:flutter_maps_samples/pages/polygons.dart';
@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
     MoveCameraSample(),
     AnimateCameraSample(),
     MarkerSample(),
-    MarkerCustomIconSample(),
+    CustomMarkerSample(),
     MarkersDynamicSample(),
     MapIdSample(),
     StyledMapSample(),
@@ -52,8 +52,8 @@ class MyHomePage extends StatelessWidget {
     MyLocationSample(),
     PolygonsSample(),
     PolylinesSample(),
-    MarkerClusteringSample(),
-    MarkerClusteringDynamicSample(),
+    ClustersSample(),
+    DynamicClustersSample(),
   ];
 
   const MyHomePage({super.key});

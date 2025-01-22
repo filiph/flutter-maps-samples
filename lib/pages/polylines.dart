@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// Shows how to add polylines to the map.
+/// Displays a map of the North Atlantic Ocean with the route of the Titanic
+/// marked on it.
 class PolylinesSample extends StatelessWidget {
   const PolylinesSample({super.key});
 
@@ -21,12 +22,13 @@ class PolylinesSample extends StatelessWidget {
             LatLng(50.96, -8.58),
             LatLng(41.75, -49.90), // Wreck
           ],
-          startCap: Cap.roundCap,
-          endCap: Cap.roundCap,
-          jointType: JointType.round,
           width: 5,
           color: Colors.red,
           geodesic: true,
+          // Custom caps and joint types aren't supported on all platforms.
+          startCap: Cap.roundCap,
+          endCap: Cap.roundCap,
+          jointType: JointType.round,
           consumeTapEvents: true,
           onTap: () => debugPrint('clicked route'),
         ),

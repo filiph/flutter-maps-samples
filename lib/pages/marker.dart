@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// Shows how to add a marker to the map.
+/// This example identifies a location on the map with a marker.
+/// When the user taps the marker, an info window appears.
 class MarkerSample extends StatelessWidget {
   const MarkerSample({super.key});
 
@@ -9,6 +10,7 @@ class MarkerSample extends StatelessWidget {
   Widget build(BuildContext context) {
     return GoogleMap(
       initialCameraPosition: CameraPosition(target: LatLng(0, 0)),
+
       // Use this parameter to place markers on the map.
       markers: {
         Marker(

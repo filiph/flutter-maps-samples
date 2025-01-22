@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// Shows how to obtain and use [GoogleMapController].
+/// The camera position is instantly set to a different view
+/// once the user taps a button.
 class MoveCameraSample extends StatefulWidget {
   const MoveCameraSample({super.key});
 
@@ -34,8 +35,11 @@ class _MoveCameraSampleState extends State<MoveCameraSample> {
 
   /// Called when the button is pressed.
   void _onPressed() {
+    // Set up the desired camera update.
     final newYork = CameraPosition(target: LatLng(40.7128, -74.0060), zoom: 12);
     final update = CameraUpdate.newCameraPosition(newYork);
+
+    // Move the camera.
     _controller?.moveCamera(update);
   }
 }

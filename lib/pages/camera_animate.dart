@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// Shows how to obtain and use [GoogleMapController].
+/// The camera zooms in and rotates to show the New York City Hall
+/// once the user taps a button.
 class AnimateCameraSample extends StatefulWidget {
   const AnimateCameraSample({super.key});
 
@@ -34,9 +35,12 @@ class _AnimateCameraSampleState extends State<AnimateCameraSample> {
 
   /// Called when the button is pressed.
   void _onPressed() {
+    // Set up the desired camera update.
     final newYork = CameraPosition(
         target: LatLng(40.7128, -74.0060), bearing: 270, tilt: 30, zoom: 18);
     final update = CameraUpdate.newCameraPosition(newYork);
+
+    // Start the animation.
     _controller?.animateCamera(update);
   }
 }

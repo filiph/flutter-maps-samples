@@ -2,17 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 /// Shows advanced options of markers.
-class MarkerCustomIconSample extends StatefulWidget {
-  const MarkerCustomIconSample({super.key});
+class CustomMarkerSample extends StatefulWidget {
+  const CustomMarkerSample({super.key});
 
   @override
-  State<MarkerCustomIconSample> createState() => _MarkerCustomIconSampleState();
+  State<CustomMarkerSample> createState() => _CustomMarkerSampleState();
 }
 
-class _MarkerCustomIconSampleState extends State<MarkerCustomIconSample> {
+class _CustomMarkerSampleState extends State<CustomMarkerSample> {
   late Marker _marker = Marker(
     markerId: MarkerId('my_marker'),
     // Start with the default Google Maps pin, except yellow.
+    // (Note: Hue isn't supported on all platforms.)
     icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow),
     onTap: _changeIcon,
   );
@@ -32,7 +33,7 @@ class _MarkerCustomIconSampleState extends State<MarkerCustomIconSample> {
 
     // Load the icon image from an asset.
     // Alternatively, you can create the icon with BitmapDescriptor.bytes(),
-    // which allows things such as using a CustomPainter.
+    // which allows loading from network or using a CustomPainter.
     final assetIcon = await BitmapDescriptor.asset(
       imageConfiguration,
       'assets/icon_flutter.png',

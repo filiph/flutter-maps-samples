@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// Shows how to work with clusters of markers at runtime.
-class MarkerClusteringDynamicSample extends StatefulWidget {
-  const MarkerClusteringDynamicSample({super.key});
+/// Demonstrates how to dynamically change the clustering of markers at runtime.
+class DynamicClustersSample extends StatefulWidget {
+  const DynamicClustersSample({super.key});
 
   @override
-  State<MarkerClusteringDynamicSample> createState() =>
-      _MarkerClusteringDynamicSampleState();
+  State<DynamicClustersSample> createState() => _DynamicClustersSampleState();
 }
 
-class _MarkerClusteringDynamicSampleState
-    extends State<MarkerClusteringDynamicSample> {
+class _DynamicClustersSampleState extends State<DynamicClustersSample> {
   Set<ClusterManager> _clusters = {};
 
   Set<Marker> _markers = {
@@ -43,8 +41,8 @@ class _MarkerClusteringDynamicSampleState
     // Here, we simply assign markers whose id starts with 'in'
     // to a the cluster above, and keep the rest as individual markers.
     //
-    // In a real app, you can choose to cluster according to some meaningful
-    // relationship between markers.
+    // Real apps will cluster according to some meaningful relationship
+    // between markers.
     final updatedMarkers = _markers
         .map((marker) => marker.copyWith(
               clusterManagerIdParam: marker.markerId.value.startsWith('in')
