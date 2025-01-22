@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// This example shows how to initialize a map with a mapID to apply
-/// Cloud-based maps styling to the map.
+/// Initializes a map with a mapID to apply Cloud-based maps styling to the map.
 class MapIdSample extends StatelessWidget {
   const MapIdSample({super.key});
 

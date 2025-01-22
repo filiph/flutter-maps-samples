@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// Shows how you can use style the map using generated JSON configuration.
+/// Shows how you can style the map using generated JSON configuration.
 class StyledMapSample extends StatelessWidget {
   const StyledMapSample({super.key});
 

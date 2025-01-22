@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// Shows how to handle map events such as taps.
+/// This example demonstrates how to configure a Google Map
+/// with handlers for map and marker tap events.
 class HandleEventsSample extends StatefulWidget {
   const HandleEventsSample({super.key});
 

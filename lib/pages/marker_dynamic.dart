@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// Shows how to show several markers at once, and how to dynamically add more.
-class MarkersDynamicSample extends StatefulWidget {
-  const MarkersDynamicSample({super.key});
+/// Adds a new marker to the map once the user taps a button.
+class DynamicMarkerSample extends StatefulWidget {
+  const DynamicMarkerSample({super.key});
 
   @override
-  State<MarkersDynamicSample> createState() => _MarkersDynamicSampleState();
+  State<DynamicMarkerSample> createState() => _DynamicMarkerSampleState();
 }
 
-class _MarkersDynamicSampleState extends State<MarkersDynamicSample> {
+class _DynamicMarkerSampleState extends State<DynamicMarkerSample> {
   /// The dynamic set of markers to be shown on the map.
   /// Marker IDs need to be unique.
   final Set<Marker> _markers = {
@@ -40,19 +40,21 @@ class _MarkersDynamicSampleState extends State<MarkersDynamicSample> {
         Align(
           alignment: Alignment(0, 0.8),
           child: FilledButton(
-            onPressed: () {
-              const fishermansWharf = Marker(
-                markerId: MarkerId('fishermansWharf'),
-                position: LatLng(37.8080, -122.4177),
-              );
-
-              // Add the marker with setState.
-              setState(() => _markers.add(fishermansWharf));
-            },
+            onPressed: _onPressed,
             child: Text('Add Fisherman’s Wharf'),
           ),
         )
       ],
     );
+  }
+
+  void _onPressed() {
+    const fishermansWharf = Marker(
+      markerId: MarkerId('fishermansWharf'),
+      position: LatLng(37.8080, -122.4177),
+    );
+
+    // Add the marker with setState.
+    setState(() => _markers.add(fishermansWharf));
   }
 }

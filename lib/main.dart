@@ -10,7 +10,7 @@ import 'package:flutter_maps_samples/pages/marker.dart';
 import 'package:flutter_maps_samples/pages/marker_clusters.dart';
 import 'package:flutter_maps_samples/pages/marker_clusters_dynamic.dart';
 import 'package:flutter_maps_samples/pages/marker_custom.dart';
-import 'package:flutter_maps_samples/pages/markers_dynamic.dart';
+import 'package:flutter_maps_samples/pages/marker_dynamic.dart';
 import 'package:flutter_maps_samples/pages/my_location.dart';
 import 'package:flutter_maps_samples/pages/polygons.dart';
 import 'package:flutter_maps_samples/pages/polylines.dart';
@@ -43,7 +43,7 @@ class MyHomePage extends StatelessWidget {
     AnimateCameraSample(),
     MarkerSample(),
     CustomMarkerSample(),
-    MarkersDynamicSample(),
+    DynamicMarkerSample(),
     MapIdSample(),
     StyledMapSample(),
     MapTypeSample(),

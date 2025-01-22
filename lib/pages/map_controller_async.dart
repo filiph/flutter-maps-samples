@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// Shows how to deal with outside asynchronous events when also waiting
-/// for [GoogleMapController].
+/// This example demonstrates how to synchronize the map
+/// with [Future]s and [Stream]s.
 class MapControllerAsyncSample extends StatefulWidget {
   const MapControllerAsyncSample({super.key});
 
@@ -58,12 +58,9 @@ class _MapControllerAsyncSampleState extends State<MapControllerAsyncSample> {
   }
 
   void _onOutsideEvent(void _) async {
-    // First, await the completer's future. This returns immediately
+    // First, await the completer's future. This continues immediately
     // if the controller value is already available.
     final controller = await _completer.future;
-
-    // Always make sure the widget is still mounted after any async await.
-    if (!mounted) return;
 
     // Use the controller.
     controller.animateCamera(CameraUpdate.zoomIn());
