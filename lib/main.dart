@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_maps_samples/pages/basic_static.dart';
+import 'package:flutter_maps_samples/pages/basic.dart';
 import 'package:flutter_maps_samples/pages/camera_animate.dart';
 import 'package:flutter_maps_samples/pages/camera_move.dart';
 import 'package:flutter_maps_samples/pages/handle_events.dart';
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   static final List<Widget> _samples = [
-    BasicStaticSample(),
+    BasicSample(),
     MoveCameraSample(),
     AnimateCameraSample(),
     MarkerSample(),
@@ -98,14 +98,17 @@ class MyHomePage extends StatelessWidget {
           );
         },
         child: Center(
-          child: Text(
-            title,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              shadows: [Shadow(blurRadius: 10)],
+          child: Padding(
+            padding: const EdgeInsets.all(8),
+            child: Text(
+              title,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                shadows: [Shadow(blurRadius: 10)],
+              ),
             ),
           ),
         ),
