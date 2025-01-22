@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 /// Shows how to obtain and use [GoogleMapController].
-class BasicSample extends StatefulWidget {
-  const BasicSample({super.key});
+class SetCameraPositionSample extends StatefulWidget {
+  const SetCameraPositionSample({super.key});
 
   @override
-  State<BasicSample> createState() => _BasicSampleState();
+  State<SetCameraPositionSample> createState() =>
+      _SetCameraPositionSampleState();
 }
 
-class _BasicSampleState extends State<BasicSample> {
+class _SetCameraPositionSampleState extends State<SetCameraPositionSample> {
   /// An instance of map controller obtained through [_onMapCreated].
   GoogleMapController? _controller;
 
