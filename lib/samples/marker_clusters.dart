@@ -16,6 +16,10 @@ class ClustersSample extends StatelessWidget {
 
       // You have to supply the list of clusters that are referred to
       // by the map's markers.
+      //
+      // Note: For clusters to work on the web, you *must* import an additional
+      // JavaScript library. Read the web README for info:
+      // https://pub.dev/packages/google_maps_flutter_web
       clusterManagers: {_myCluster},
       markers: {
         // Google Maps will smartly cluster markers with the same
