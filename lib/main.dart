@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  static final List<Widget> _samples = [
+  static final List<Widget> samples = [
     BasicSample(),
     MoveCameraSample(),
     AnimateCameraSample(),
@@ -74,7 +74,7 @@ class MyHomePage extends StatelessWidget {
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
         children: [
-          for (var (index, sample) in _samples.indexed)
+          for (var (index, sample) in samples.indexed)
             _buildCard(index, sample, context)
         ],
       ),
@@ -86,6 +86,7 @@ class MyHomePage extends StatelessWidget {
     final title = _describe(widget);
 
     return Card(
+      key: Key(title),
       color: color,
       child: InkWell(
         onTap: () {
