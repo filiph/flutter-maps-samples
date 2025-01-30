@@ -13,11 +13,14 @@ class _DynamicClustersSampleState extends State<DynamicClustersSample> {
   Set<ClusterManager> _clusters = {};
 
   Set<Marker> _markers = {
-    Marker(markerId: MarkerId('in 1'), position: LatLng(6.51, 3.37)),
-    Marker(markerId: MarkerId('in 2'), position: LatLng(6.64, 3.52)),
-    Marker(markerId: MarkerId('in 3'), position: LatLng(6.46, 3.58)),
-    Marker(markerId: MarkerId('in 4'), position: LatLng(6.85, 3.63)),
-    Marker(markerId: MarkerId('out'), position: LatLng(5.31, -3.99)),
+    Marker(markerId: MarkerId('seville'), position: LatLng(37.39, -5.98)),
+    Marker(markerId: MarkerId('malaga'), position: LatLng(36.71, -4.41)),
+    Marker(markerId: MarkerId('cadiz'), position: LatLng(36.52, -6.28)),
+    Marker(markerId: MarkerId('gibraltar'), position: LatLng(36.04, -5.61)),
+    Marker(markerId: MarkerId('tangier'), position: LatLng(35.76, -5.84)),
+    Marker(markerId: MarkerId('chefchaouen'), position: LatLng(35.19, -5.25)),
+    Marker(markerId: MarkerId('tetouan'), position: LatLng(35.58, -5.35)),
+    Marker(markerId: MarkerId('larache'), position: LatLng(35.19, -6.15)),
   };
 
   @override
@@ -26,33 +29,33 @@ class _DynamicClustersSampleState extends State<DynamicClustersSample> {
       initialCameraPosition: CameraPosition(target: LatLng(0, 0)),
       clusterManagers: _clusters,
       markers: _markers,
-      // We recompute clusters whenever the map's view has finished moving.
-      onCameraIdle: _recomputeClusters,
+      // We compute clusters as soon as the map has finished loading.
+      onMapCreated: (_) => _computeClusters(),
     );
   }
 
   /// Creates clusters according to some business logic, then calls [setState].
-  void _recomputeClusters() {
-    final myCluster = ClusterManager(
-      clusterManagerId: ClusterManagerId('my cluster'),
-      onClusterTap: (c) => debugPrint('tapped cluster'),
-    );
+  void _computeClusters() {
+    final spainCluster =
+        ClusterManager(clusterManagerId: ClusterManagerId('spain'));
+    final moroccoCluster =
+        ClusterManager(clusterManagerId: ClusterManagerId('morocco'));
 
-    // Here, we simply assign markers whose id starts with 'in'
-    // to a the cluster above, and keep the rest as individual markers.
+    // Here, we simply assign markers above a certain latitude to one cluster,
+    // and ones below to another.
     //
-    // Real apps will cluster according to some meaningful relationship
+    // Real apps will cluster according to some more meaningful relationships
     // between markers.
     final updatedMarkers = _markers
         .map((marker) => marker.copyWith(
-              clusterManagerIdParam: marker.markerId.value.startsWith('in')
-                  ? myCluster.clusterManagerId
-                  : null,
+              clusterManagerIdParam: marker.position.latitude > 35.96
+                  ? spainCluster.clusterManagerId
+                  : moroccoCluster.clusterManagerId,
             ))
         .toSet();
 
     setState(() {
-      _clusters = {myCluster};
+      _clusters = {spainCluster, moroccoCluster};
       _markers = updatedMarkers;
     });
   }
