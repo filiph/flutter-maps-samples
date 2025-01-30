@@ -14,6 +14,7 @@ import 'package:flutter_maps_samples/samples/marker_dynamic.dart';
 import 'package:flutter_maps_samples/samples/my_location.dart';
 import 'package:flutter_maps_samples/samples/polygons.dart';
 import 'package:flutter_maps_samples/samples/polylines.dart';
+import 'package:flutter_maps_samples/samples/scrolling.dart';
 import 'package:flutter_maps_samples/samples/styled_map.dart';
 
 void main() {
@@ -54,6 +55,7 @@ class MyHomePage extends StatelessWidget {
     MyLocationSample(),
     HandleEventsSample(),
     MapControllerAsyncSample(),
+    ScrollingSample(),
   ];
 
   const MyHomePage({super.key});
