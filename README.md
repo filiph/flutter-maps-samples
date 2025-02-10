@@ -35,10 +35,10 @@ the resources here: https://developers.google.com/maps/support/
 
 If you've found an issue with the Google Maps SDK for Flutter,
 or the [`google_maps_flutter` plugin](https://pub.dev/packages/google_maps_flutter),
-please file an issue: https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+maps%22
+please [file an issue](https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+maps%22).
 
-If you've found an error in these samples, please file an issue:
-https://github.com/googlemaps-samples/maps-sdk-for-ios-samples ==TODO==
+If you've found an error in this sample repository, 
+please [file an issue](https://github.com/googlemaps-samples/maps-sdk-for-ios-samples). ==TODO==
 
 Patches are encouraged, and may be submitted according to the instructions in
 CONTRIBUTING.md.  ==TODO==
