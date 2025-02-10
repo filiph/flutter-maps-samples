@@ -21,13 +21,18 @@ void main() {
   runApp(const MyApp());
 }
 
+/// This is just the entry point of the app, including code to list the various
+/// samples in a simple UI.
+///
+/// The interesting code that has to do with Google Maps
+/// is in the `samples/` subdirectory.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Google Maps Demo',
+      title: 'Google Maps Samples',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
@@ -81,6 +86,8 @@ class MyHomePage extends StatelessWidget {
     );
   }
 
+  /// Takes one of the widgets from [samples] and builds a tappable
+  /// card that pushes a new [Route] with the given sample [widget].
   Widget _buildCard(int index, Widget widget, BuildContext context) {
     final color = Colors.primaries[index % Colors.primaries.length].shade700;
     final title = _describe(widget);
