@@ -41,4 +41,4 @@ If you've found an error in these samples, please file an issue:
 https://github.com/googlemaps-samples/maps-sdk-for-ios-samples ==TODO==
 
 Patches are encouraged, and may be submitted according to the instructions in
-CONTRIBUTING.md.
+CONTRIBUTING.md.  ==TODO==
