@@ -16,19 +16,14 @@ This repository contains sample code demonstrating how to use
 [Google Maps SDK for Flutter](https://developers.google.com/maps/flutter-package/overview)
 and the [`google_maps_flutter` plugin](https://pub.dev/packages/google_maps_flutter).
 
-Pre-requisites
---------------
-
-* An up-to-date version of the Flutter SDK.
-* The demo app requires that you add your own Google Maps API key.
-  See [Get Started](https://developers.google.com/maps/get-started)
-  docs for more instructions.
-
 Getting Started
 ---------------
 
 1. Download the samples by cloning this repository
 2. Open the project in your IDE
+3. The demo app requires that you add your own Google Maps API key.
+   See [Get Started](https://developers.google.com/maps/get-started)
+   docs for more instructions.
 
 Support
 -------
