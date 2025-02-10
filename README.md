@@ -34,7 +34,7 @@ If you have discovered an issue with the Google Maps Platform, please see
 the resources here: https://developers.google.com/maps/support/
 
 If you've found an issue with the Google Maps SDK for Flutter,
-or the [`google_maps_flutter` plugin](https://pub.dev/packages/google_maps_flutter),
+or the `google_maps_flutter` plugin,
 please [file an issue](https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+maps%22).
 
 If you've found an error in this sample repository, 
