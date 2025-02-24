@@ -8,9 +8,7 @@
 Google Maps SDK for Flutter sample code
 =======================================
 
-<!-- ==TODO== 
-<img src="images/screenshots.png" width="1024" />
--->
+<img src="screenshots.png" width="1660" height="934" alt="Screenshot of the Google Maps Flutter sample running on an Android device, an iOS device, and in a desktop browser."/>
 
 This repository contains sample code demonstrating how to use
 [Google Maps SDK for Flutter](https://developers.google.com/maps/flutter-package/overview)
