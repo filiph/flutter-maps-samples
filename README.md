@@ -37,7 +37,7 @@ or the `google_maps_flutter` plugin,
 please [file an issue](https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+maps%22).
 
 If you've found an error in this sample repository, 
-please [file an issue](https://github.com/googlemaps-samples/maps-sdk-for-ios-samples). ==TODO==
+please [file an issue](https://github.com/googlemaps-samples/flutter-maps-samples/issues).
 
 Patches are encouraged, and may be submitted according to the instructions in
-CONTRIBUTING.md.  ==TODO==
+CONTRIBUTING.md.
