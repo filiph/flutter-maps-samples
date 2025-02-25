@@ -7,18 +7,13 @@ labels: ['type: bug', 'triage me']
 body:
   - type: markdown
     attributes:
-      value: |
+      value: >
         Thank you for using googlemaps-samples/flutter-maps-samples!
 
         If you believe this bug is related to a feature in our native SDKs or
         you have question about how features should be used, please create an
-        issue in the [support
-        console](https://console.cloud.google.com/google/maps-apis/support/createcase).
+        issue in the [support console](https://console.cloud.google.com/google/maps-apis/support/createcase).
         This will ensure a timely response.
-
-        Links to the official native SDKs supported by Google Support:
-        - [Android](https://developers.google.com/maps/documentation/navigation/android-sdk)
-        - [iOS](https://developers.google.com/maps/documentation/navigation/ios-sdk)
 
         Discover additional support services for the Google Maps Platform,
         including developer communities, technical guidance, and expert support
