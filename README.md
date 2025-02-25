@@ -2,7 +2,7 @@
 ![Apache-2.0](https://img.shields.io/badge/license-Apache-blue)
 [![Discord](https://img.shields.io/discord/676948200904589322)](https://discord.gg/hYsWbmk)
 <!--
-[![Build demos](https://github.com/googlemaps/android-samples/workflows/Build%20demos/badge.svg)](https://github.com/googlemaps/android-samples/actions?query=workflow%3A%22Build+demos%22)
+[![Build sample](https://github.com/googlemaps-samples/flutter-maps-samples/workflows/Build%20sample/badge.svg)](https://github.com/googlemaps-samples/flutter-maps-samples/actions?query=workflow%3A%22Build+sample%22)
 -->
 
 Google Maps SDK for Flutter sample code
@@ -19,7 +19,10 @@ Getting Started
 
 1. Download the samples by cloning this repository
 2. Open the project in your IDE
-3. The demo app requires that you add your own Google Maps API key.
+3. The sample app requires that you add your own Google Maps API key into
+   `app/src/main/AndroidManifest.xml`,
+   `ios/Runner/AppDelegate.swift` and
+   `web/index.html`.
    See [Get Started](https://developers.google.com/maps/get-started)
    docs for more instructions.
 
