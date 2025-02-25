@@ -27,6 +27,7 @@ Support
 -------
 
 - Stack Overflow: https://stackoverflow.com/questions/tagged/flutter+google-maps
+- Discord: https://discord.gg/hYsWbmk
 
 If you have discovered an issue with the Google Maps Platform, please see
 the resources here: https://developers.google.com/maps/support/
